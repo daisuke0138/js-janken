@@ -1,0 +1,296 @@
+body {
+  background-image: url(../images/cajino_background.png);
+  background-size: cover;
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: darken;
+  font-family: "MS PMincho";
+}
+
+.top-text ,.count {
+  color: gold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+/* slickのcss */
+.chara-text ,.chara-text2 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(245, 209, 4);
+  font-size: 18px;
+}
+.chara-text2 {
+  font-size: 18px;
+}
+
+.chara-name {
+  font-weight: bold;
+  cursor: grab;
+  color: rgb(245, 209, 4);
+}
+
+.slick-slider{
+  margin: 0 auto;
+  width: 45vw;
+  height: 35vh;
+  outline: auto;
+  outline-color: black;
+  background-image: url(../images/cajino_background02.png);
+  background-size:cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.slider-img {
+  margin: 0.5vw;
+  text-align: center;
+}
+
+.slider-img img{
+  outline: auto;
+  width: 100%;
+  height: 10vw;
+  opacity: 0.5;
+  transform: scale(0.6);
+  transition: opacity .5s,transform .5s;
+}
+
+.slick-slider .slick-center img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slider-img :active {
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  cursor: grabbing;
+}
+
+.slide-dots{
+  display: flex;
+  justify-content: center;
+  margin: 1vw 0 0 0;
+  cursor: grab;
+}
+
+.slide-dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000066;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.slide-dots li button {
+  position: relative;
+  text-indent: -9999px;
+  display: none;
+}
+.slide-dots li.slick-active {
+  background-color: #000066;
+}
+
+.slide-dots li:hover{
+  background-color:#000066; 
+}
+
+/* chara選択ボタン */
+.chara_select_button {
+  text-align: center;
+  cursor: grab;
+}
+
+.chara_select_button button {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: grab;
+}
+
+/* ゲームCSS */
+.count{
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+h1 img{
+  height: 20px;
+}
+
+.hand-text-box{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* 画像配置boxのCSS */
+.img-body{
+position: relative;
+height: 250px;
+display: flex;
+justify-content: center;
+margin-top: 100px;
+}
+/* スタート時のCSS */
+.start-img {
+  width:150px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 20px 0 0 0 ;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.start-img img {
+/* 親boxサイズに対する、画像サイズと位置を指定すること */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* 勝敗結果のcss */
+.result-img-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  width:  1200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.result-img-box img{
+  width: 200px;
+  height: 250px;
+  outline: auto;
+}
+
+.result-box {
+  height: 250px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.count-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(245, 209, 4);
+}
+
+
+/* shuffle css */
+.base-tramp {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.base-card {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shuffle-box {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.shuffle-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  outline: auto;
+}
+
+.chara-img-box {
+  height: 250px;
+  width: 200px;
+  outline: auto;
+}
+
+.result-text{
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* これ以下はボタン関連css */
+h2 {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: grab;
+}
+
+.button-box{
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.shuffle-bt {
+  margin: 0px 10px 0 10px;
+}
+
+.reset-button{
+  display: flex;
+  justify-content: center;
+  margin: 200px 0px 0px 0px;
+}
